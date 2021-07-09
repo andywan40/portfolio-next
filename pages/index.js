@@ -12,8 +12,11 @@ export default function Home() {
       <Head>
         <title>Andrew Wan | Full Stack Developer</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet" />
       </Head>
-      <main className="text-gray-400 bg-gray-900 body-font">
+      <main className="text-gray-400 bg-white body-font">
         <Navbar />
         <About />
         <Projects />
