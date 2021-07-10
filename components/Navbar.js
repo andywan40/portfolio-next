@@ -3,24 +3,28 @@ import React from "react";
 
 export default function Navbar() {
     return (
-        <header className="font-title bg-white md:sticky top-0 z-10">
-            <div className="container mx-auto p-5 flex justify-between">
+        <header className="font-navbar bg-white md:sticky top-0 z-10">
+            <div className="mx-auto p-5 flex justify-between">
                 <a className="title-font font-medium text-black mb-4 md:mb-0">
-                    <a href="#about" className="ml-3 text-xl">
-                        Reed Barger
+                    <a href="#" className="ml-3 text-xl">
+                        <img 
+                            className="absolute inset-0 object-center"
+                            src="./logo_colored.png"
+                            alt="logo"
+                        />
                     </a>
                 </a>
                 <nav className="title-font md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">
-                    <a href="#projects" className="mr-5 hover:text-white hover:line-through">
+                    <a href="#projects" className="mr-5 text-black hover:line-through uppercase">
                         About
                     </a>
-                    <a href="#skills" className="mr-5 hover:text-white hover:line-through">
+                    <a href="#skills" className="mr-5 text-black hover:line-through uppercase">
                         Projects
                     </a>
-                    <a href="#experiences" className="mr-5 hover:text-white hover:line-through">
+                    <a href="#experiences" className="mr-5 text-black hover:line-through uppercase">
                         Experiences
                     </a>
-                    <a href="#contact" className="mr-5 hover:text-white hover:line-through">
+                    <a href="#contact" className="mr-5 text-black hover:line-through uppercase">
                         Contact
                     </a>
                 </nav>

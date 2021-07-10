@@ -2,10 +2,10 @@ import React from "react";
 
 export default function About() {
     return (
-        <section id="about">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow lg:pr-6 md:w-1/2 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="font-title font-extrabold sm:text-7xl text-6xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-red-600">
+        <section id="about" className="h-screen">
+            <div className="grid grid-cols-12">
+                <div className="col-start-3 col-end-9">
+                    <h1 className="font-title font-extrabold sm:text-9xl text-9xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-red-600">
                         Andrew Wan
                     </h1>
                     <p className="mb-8 leading-relaxed">
@@ -24,12 +24,12 @@ export default function About() {
                         </a>
                     </div>
                 </div>
-                <div className="lg:max-w-md lg:w-1/2 md:w-1/2 w-5/6">
-                    <img
+                <div className="col-start8 col-end-10">
+                    {/* <img
                         className="object-cover object-center rounded"
                         alt="hero"
                         src="./coding.svg"
-                    />
+                    /> */}
                 </div>
             </div>
         </section>
