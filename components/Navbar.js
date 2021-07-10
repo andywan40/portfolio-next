@@ -1,4 +1,4 @@
-// import { ArrowRightIcon } from "@heroicons/react/solid";
+import { MenuIcon } from "@heroicons/react/solid";
 import React from "react";
 
 export default function Navbar() {
@@ -14,27 +14,22 @@ export default function Navbar() {
                         />
                     </a>
                 </a>
-                <nav className="title-font md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">
-                    <a href="#projects" className="mr-5 text-black hover:line-through uppercase">
+                <nav className="title-font flex justify-end">
+                    <a href="#" className="md:hidden mr-5 text-black hover:line-through uppercase">
                         About
                     </a>
-                    <a href="#skills" className="mr-5 text-black hover:line-through uppercase">
+                    <a href="#projects" className="md:hidden mr-5 text-black hover:line-through uppercase">
                         Projects
                     </a>
-                    <a href="#experiences" className="mr-5 text-black hover:line-through uppercase">
+                    <a href="#experiences" className="md:hidden mr-5 text-black hover:line-through uppercase">
                         Experiences
                     </a>
-                    <a href="#contact" className="mr-5 text-black hover:line-through uppercase">
+                    <a href="#contact" className="md:hidden mr-5 text-black hover:line-through uppercase">
                         Contact
                     </a>
+                    <MenuIcon className="hidden md:block mr-5 text-black h-1/12 w-1/12 cursor-pointer"/>
                 </nav>
-                {/* <popup/>  appear when medium*/}
-                {/* <a
-                    href="#contact"
-                    className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                    Hire Me
-                    <ArrowRightIcon className="w-4 h-4 ml-1" />
-                </a> */}
+                
             </div>
         </header>
     );

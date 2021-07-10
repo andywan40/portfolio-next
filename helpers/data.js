@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: "Food Picker",
-        subtitle: "React & Node.js",
+        subtitle: "Can't Decide What To Eat?",
         description:
             "Designed and built for people who have trouble deciding what to eat. Showcases images and provides recipes of different dishes with the help of the Unsplash and Edamam API",
         image: "./foodpicker.jpg",
@@ -10,7 +10,7 @@ export const projects = [
     },
     {
         title: "WannaBuy",
-        subtitle: "HTML & JS & Node.js & MongoDB",
+        subtitle: "Can't Find What You Want?",
         description:
             "Designed for online shoppers to better keep track of interested items",
         image: "./wannabuy.png",
