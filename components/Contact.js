@@ -1,15 +1,17 @@
 import React, {useState} from "react";
-//import axios from "axios";
+import axios from "axios";
 import { HandIcon } from "@heroicons/react/solid";
 
 export default function Contact() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
     //const alertSuccess = () => toast.success("I will get back to you soon. Thank you ! 🦄");
     //const alertFailure = () => toast.error("Something went wrong. Please try again later!");
     //const showLoadingMessage = () => toast.info("Submitting....", {autoClose: false});
     const handleSubmit = (e) => {
+        setIsLoading(true);
         e.preventDefault();
         //showLoadingMessage();
         const infoData = {
@@ -21,16 +23,17 @@ export default function Contact() {
         setEmail("");
         setMessage("");
         const url = "https://immense-fortress-49913.herokuapp.com/submitMessage"
-        // axios.post(url, infoData).then(res => {
-        //     if (res.data.message) {
-        //         toast.dismiss();
-        //         alertSuccess();
-        //     } else {
-        //         toast.dismiss();
-        //         alertFailure();
-        //     }
-        // })
-        console.log(infoData);
+        axios.post(url, infoData).then(res => {
+            console.log(res);
+            if (res.data.message) {
+                //toast.dismiss();
+                //alertSuccess();
+            } else {
+                //toast.dismiss();
+                //alertFailure();
+            }
+            setIsLoading(false);
+        })
     }
     const handleChange = (e, setFunc) => {
         setFunc(e.target.value);
@@ -122,8 +125,11 @@ export default function Contact() {
                     </div>
                     <button
                         type="submit"
-                        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest">
-                        Submit
+                        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest"
+                        className={isLoading? "cursor-not-allowed opacity-50 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest" :"text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest"}
+                        disabled={isLoading ? true: false}
+                    >
+                        {isLoading? "...Submitting" : "Submit"}
                     </button>
                 </form>
             </div>
