@@ -39,7 +39,7 @@ export default function Contact() {
     }
     return (
         <section id="contact" className="relative">
-            <div className="container grid grid-cols-12 px-36 py-10 mx-auto my-10">
+            <div className="container grid grid-cols-12 md:px-10 px-36 py-10 mx-auto my-10">
                 <div className="col-start-1 col-span-6 lg:hidden bg-gray-900 rounded-lg overflow-hidden p-10 flex items-end justify-start relative">
                     <iframe
                         width="100%"
@@ -75,9 +75,9 @@ export default function Contact() {
                 <form
                     onSubmit={handleSubmit}
                     className="col-start-7 col-span-6 px-8 flex flex-col w-full mt-2 lg:col-start-1 lg:col-span-12">
-                    <h2 className="text-black text-3xl mb-2 font-medium font-title">
+                    <h2 className="text-black xs:text-2xl sm:text-3xl text-4xl mb-2 font-medium font-title">
                         Contact Me
-                        <HandIcon className="w-1/12 h-1/12 inline-block mx-2 animate-wiggle"/>
+                        <HandIcon className="xxs:hidden w-1/12 h-1/12 inline-block mx-2 animate-wiggle text-indigo-500"/>
                     </h2>
                     <p className="leading-relaxed mb-5 font-navbar">
                         How can I help?
