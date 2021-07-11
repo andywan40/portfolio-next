@@ -48,7 +48,7 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.8)" }}
-                        src="https://www.google.com/maps/embed/v1/place?q=dongmen+station+taipei&key=AIzaSyAvzqfNOFZnIHRRBWWdwQ2UcEWnTquJCy4"
+                        src={`https://www.google.com/maps/embed/v1/place?q=dongmen+station+taipei&key=${process.env.MAP_KEY}`}
                     />
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
