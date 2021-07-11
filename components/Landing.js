@@ -2,7 +2,7 @@ import React from "react";
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function About() {
+export default function Landing() {
     return (
         <section id="about" className="h-screen">
             <div className="grid grid-cols-12 h-screen">

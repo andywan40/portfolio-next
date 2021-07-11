@@ -17,7 +17,7 @@ export default function Projects() {
                         <div className="grid grid-cols-12 my-24" key={project.title}>
                             <div className={i%2 === 0 ? "hidden": "col-start-2 col-span-3 text-center text-2xl flex flex-col items-center justify-center px-10 sm:hidden"}>
                                 {project.subtitle}
-                                <ChevronDoubleRightIcon className="w-6 h-6"/>
+                                <ChevronDoubleRightIcon className="w-6 h-6 animate-wiggle"/>
                             </div>
                             <a
                                 href={project.link}
@@ -39,7 +39,7 @@ export default function Projects() {
                             </a>
                             <div className={i%2 === 0 ? "col-span-3 text-center text-2xl flex flex-col items-center justify-center px-10 sm:hidden": "hidden"}>
                                 {project.subtitle}
-                                <ChevronDoubleLeftIcon className="w-6 h-6"/>
+                                <ChevronDoubleLeftIcon className="w-6 h-6 animate-wiggle"/>
                             </div>
                         </div>
                         // <a
