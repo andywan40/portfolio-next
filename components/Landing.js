@@ -7,7 +7,7 @@ export default function Landing() {
     return (
         <section id="about" className="h-screen">
             <div className="grid grid-cols-12 h-screen">
-                <div className="col-start-1 col-span-1 flex flex-col justify-end items-end pb-36">
+                <div className="col-start-1 col-span-1 flex flex-col justify-end items-end pb-48">
                     <a className="my-1" href="https://www.linkedin.com/in/and-wan" target="_blank" rel="noopener noreferrer"><LinkedInIcon/></a>
                     <a className="my-1" href="https://github.com/andywan40" target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
                     <a className="my-1" href="https://www.instagram.com/and__wan" target="_blank" rel="noopener noreferrer"><InstagramIcon/></a>

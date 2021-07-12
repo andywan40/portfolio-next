@@ -1,7 +1,10 @@
 import React from "react";
 import Link from 'next/link';
-import { MenuIcon } from "@heroicons/react/solid";
+import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { MenuIcon } from "@heroicons/react/solid";
+import logo from "../public/logo_colored.png";
+
 
 export default function Navbar() {
     const router = useRouter();
@@ -11,13 +14,11 @@ export default function Navbar() {
             <div className="mx-auto p-5 flex justify-between">
                 <div className="title-font font-medium text-black mb-4 md:mb-0">
                     <Link href="/">
-                        <a className="ml-3 text-xl">
-                            <img 
-                                className="absolute inset-0 object-center"
-                                src="./logo_colored.png"
-                                alt="logo"
-                            />
-                        </a>
+                        <Image
+                            className="absolute inset-0 object-center cursor-pointer"
+                            src={logo}
+                            alt="logo"
+                        />
                     </Link>
                 </div>
                 <nav className="title-font flex justify-end">

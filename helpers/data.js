@@ -1,3 +1,9 @@
+import mountFuji from "../public/mountFuji.jpg";
+import tokyoTower from "../public/tokyoTower.jpg";
+import harajuku from "../public/harajuku.jpg";
+import shibuya from "../public/shibuya.jpg";
+
+
 export const projects = [
     {
         title: "Food Picker",
@@ -31,6 +37,42 @@ export const skills = [
     "MongoDB",
     "Material UI"
 ];
+
+
+export const images = [
+    {
+        src: mountFuji,
+        title: "Mount Fuji",
+        author: "aditya anjagi"
+    },
+    {
+        src: tokyoTower,
+        title: "Tokyo Tower",
+        author: "Jezael Melgoza"
+    },
+    {
+        src: harajuku,
+        title: "Harajuku",
+        author: "Elton Sa"
+    },
+    {
+        src: shibuya,
+        title: "Shibuya",
+        author: "Jezael Melgoza"
+    }
+]
+
+
+
+
+//Photo by <a href="https://unsplash.com/@agilelo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">aditya anjagi</a> on <a href="https://unsplash.com/s/photos/mount-fuji?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+//Photo by <a href="https://unsplash.com/@jezael?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jezael Melgoza</a> on <a href="https://unsplash.com/s/photos/tokyo-tower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+//Photo by <a href="https://unsplash.com/@bigeruta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elton Sa</a> on <a href="https://unsplash.com/s/photos/harajuku?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+//Photo by <a href="https://unsplash.com/@jezael?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jezael Melgoza</a> on <a href="https://unsplash.com/s/photos/shibuya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  
+
+
 
 // export const resumeSections = [
 //   {

@@ -3,27 +3,15 @@ import axios from "axios";
 import { HandIcon } from "@heroicons/react/solid";
 
 export default function Contact() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const [formData, setFormData] = useState({name: "", email: "", message: ""});
     const [isLoading, setIsLoading] = useState(false);
-    //const alertSuccess = () => toast.success("I will get back to you soon. Thank you ! 🦄");
-    //const alertFailure = () => toast.error("Something went wrong. Please try again later!");
-    //const showLoadingMessage = () => toast.info("Submitting....", {autoClose: false});
     const handleSubmit = (e) => {
-        setIsLoading(true);
         e.preventDefault();
-        //showLoadingMessage();
-        const infoData = {
-            name,
-            email,
-            message
-        }
-        setName("");
-        setEmail("");
-        setMessage("");
+        const info = formData;
+        setIsLoading(true);
+        setFormData({name: "", email: "", message: ""});
         const url = "https://immense-fortress-49913.herokuapp.com/submitMessage"
-        axios.post(url, infoData).then(res => {
+        axios.post(url, info).then(res => {
             if (res.data.message) {
                 //toast.dismiss();
                 //alertSuccess();
@@ -34,8 +22,10 @@ export default function Contact() {
             setIsLoading(false);
         })
     }
-    const handleChange = (e, setFunc) => {
-        setFunc(e.target.value);
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setFormData({...formData, [name]: value});
     }
     return (
         <section id="contact" className="relative">
@@ -90,8 +80,8 @@ export default function Contact() {
                             type="text"
                             id="name"
                             name="name"
-                            value={name}
-                            onChange={e => handleChange(e, setName)}
+                            value={formData.name}
+                            onChange={handleChange}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                     </div>
@@ -103,8 +93,8 @@ export default function Contact() {
                             type="email"
                             id="email"
                             name="email"
-                            value={email}
-                            onChange={e => handleChange(e, setEmail)}
+                            value={formData.email}
+                            onChange={handleChange}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                     </div>
@@ -117,8 +107,8 @@ export default function Contact() {
                         <textarea
                             id="message"
                             name="message"
-                            value={message}
-                            onChange={e => handleChange(e, setMessage)}
+                            value={formData.message}
+                            onChange={handleChange}
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                         />
                     </div>
