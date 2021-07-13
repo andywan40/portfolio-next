@@ -10,7 +10,7 @@ export default function Navbar() {
     const router = useRouter();
     const { pathname } = router;
     return (
-        <header className="font-navbar bg-white sticky top-0 z-10">
+        <header className="font-content bg-white sticky top-0 z-10">
             <div className="mx-auto p-2 flex justify-between items-center">
                 <div className="title-font font-medium text-black mb-4 md:mb-0">
                     <Link href="/">

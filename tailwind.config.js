@@ -8,8 +8,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         title: ['Rakkas', 'cursive'],
-        navbar: ['Cantarell', 'sans-serif'],
-        list: ['Cinzel', 'serif'],
+        content: ['Cantarell', 'sans-serif'],
       },
       backgroundImage: theme => ({
         'about': "url('/images/taipei.jpg')",
@@ -23,13 +22,13 @@ module.exports = {
         "0.6": "0.6"
       },
       screens: {
-        '2xl': {'max': '1535px'},
-        'xl': {'max': '1279px'},
-        'lg': {'max': '1023px'},
-        'md': {'max': '767px'},
-        'sm': {'max': '639px'},
-        'xs': {'max': '490px'},
-        'xxs': {'max': '376px'}
+        '2xl': { 'max': '1535px' },
+        'xl': { 'max': '1279px' },
+        'lg': { 'max': '1023px' },
+        'md': { 'max': '767px' },
+        'sm': { 'max': '639px' },
+        'xs': { 'max': '490px' },
+        'xxs': { 'max': '376px' }
       },
       fontSize: {
         '2xl': '2rem',
