@@ -2,24 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes strike{
-  0%   { width : 0; }
-  100% { width: 100%; }
+@keyframes strike {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .strike {
   position: relative;
 }
 
-.active{
-    @apply line-through;
-    text-decoration-color: #ed64a6;
+.active {
+  @apply line-through;
+  text-decoration-color: #ed64a6;
 }
 
 .strike:hover::after {
   @apply bg-pink-500 h-px absolute left-0 w-full;
   content: " ";
-  top: 12%;
+  top: 50%;
   animation-name: strike;
   animation-duration: 400ms;
   animation-timing-function: linear;
@@ -27,7 +31,7 @@
   animation-fill-mode: forwards;
 }
 
-.image{
+.image {
   @apply block rounded;
   width: 90%;
   height: 90%;
@@ -35,7 +39,7 @@
   backface-visibility: hidden;
 }
 
-.image-text{
+.image-text {
   @apply opacity-0 absolute text-white text-center;
   transition: 0.5s ease;
   top: 50%;
@@ -43,7 +47,7 @@
   transform: translate(-50%, -50%);
 }
 
-.scroll{
+.scroll {
   @apply opacity-0;
   transition: all 1s ease-in-out;
 }
