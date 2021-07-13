@@ -8,10 +8,10 @@ import logo from "../public/logo_colored.png";
 
 export default function Navbar() {
     const router = useRouter();
-    const {pathname} = router;
+    const { pathname } = router;
     return (
         <header className="font-content bg-white sticky top-0 z-10">
-            <div className="mx-auto p-5 flex justify-between">
+            <div className="mx-auto p-2 flex justify-between items-center">
                 <div className="title-font font-medium text-black mb-4 md:mb-0">
                     <Link href="/">
                         <Image
@@ -19,21 +19,20 @@ export default function Navbar() {
                             src={logo}
                             alt="logo"
                         />
-                    </Link>
-                </div>
-                <nav className="title-font flex justify-end">
+                    </Link>                </div>
+                <nav className="title-font flex justify-end items-center">
                     <Link href="/about">
-                        <a className={ pathname === "/about" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
+                        <a className={pathname === "/about" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
                             About
                         </a>
                     </Link>
                     <Link href="/projects">
-                        <a className={ pathname === "/projects" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
+                        <a className={pathname === "/projects" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
                             Projects
                         </a>
                     </Link>
                     <Link href="/experiences">
-                        <a className={ pathname === "/experiences" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
+                        <a className={pathname === "/experiences" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
                             Experiences
                         </a>
                     </Link>
@@ -42,7 +41,7 @@ export default function Navbar() {
                             Contact
                         </a>
                     </Link>
-                    <MenuIcon className="hidden md:block mr-5 text-black h-1/12 w-1/12 cursor-pointer"/>
+                    <MenuIcon className="hidden md:block mr-5 text-black h-1/12 w-1/12 cursor-pointer" />
                 </nav>
             </div>
         </header>
