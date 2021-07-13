@@ -27,7 +27,6 @@ export default function About() {
       <div className="container xxs:px-1 xs:px-4 sm:px-8 lg:px-20 px-36 sm:pt-0 sm:pb-20 pt-6 pb-10 text-gray-600 h-screen font-navbar xs:flex xs:flex-col xs:justify-start xs:items-center xs:pt-10 text-left">
         <div className="flex items-center">
           <h1 className="xs:text-1xl sm:text-2xl md:text-3xl text-4xl text-gray-800 font-title inline-block">Andrew Wan</h1>
-          <BadgeCheckIcon className="h-7 w-7 ml-2 text-blue-600 inline-block xxs:hidden" />
         </div>
         <h5 className="my-8 sm:my-6 text-1xl xs:w-10/12">I currently am working as a Software Engineer at <span className="text-pink-400">Asgard System, Inc. </span>
           I am passionate about creating products that help improve the lives of many people.</h5>
