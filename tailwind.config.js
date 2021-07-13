@@ -8,8 +8,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         title: ['Rakkas', 'cursive'],
-        navbar: ['Cantarell', 'sans-serif'],
-        list: ['Cinzel', 'serif'],
+        content: ['Cantarell', 'sans-serif'],
       },
       backgroundImage: theme => ({
         'about': "url('/images/taipei.jpg')",

@@ -24,10 +24,10 @@ export default function About() {
   
   return (
     <Page>
-        <div className="container xxs:px-1 xs:px-4 sm:px-8 md:px-20 px-36 py-10 text-gray-600 h-screen font-navbar xs:flex xs:flex-col xs:justify-center xs:items-center xs:text-center">
+        <div className="container xxs:px-1 xs:px-4 sm:px-8 md:px-20 px-36 py-10 text-gray-600 h-screen font-content xs:flex xs:flex-col xs:justify-center xs:items-center xs:text-center">
             <div className="flex items-center">
                 <h1 className="xs:text-1xl sm:text-2xl md:text-3xl text-4xl text-gray-800 font-title inline-block">Andrew Wan</h1>
-                <BadgeCheckIcon className="h-7 w-7 ml-2 text-blue-600 inline-block xxs:hidden"/>
+                {/* <BadgeCheckIcon className="h-7 w-7 ml-2 text-blue-600 inline-block xxs:hidden"/> */}
             </div>
             <h5 className="mt-8 mb-12 text-1xl xs:w-10/12">I currently am working as a Software Engineer at <span className="text-pink-400">Asgard System, Inc.</span></h5>
             <p className="mb-12 text-md xs:w-10/12">I am passionate about creating products that help improve the lives of many people.</p>
@@ -44,7 +44,7 @@ export default function About() {
         </div>
         <div className="grid grid-cols-2 xl:grid-cols-1 xxs:px-1 xs:px-4 sm:px-8 md:px-20 px-36 mb-10">
           {images.map(image => (
-            <div className="relative group flex text-center justify-center m-1">
+            <div className="relative group flex text-center justify-center m-1" key={image.title}>
               <Image src={image.src} className="group-hover:brightness-50 rounded-md m-5"/>
               <div className="image-text text-2xl font-title group-hover:opacity-100 group-hover:font-medium">
                 {image.title}

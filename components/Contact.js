@@ -69,11 +69,11 @@ export default function Contact() {
                         Contact Me
                         <HandIcon className="xxs:hidden w-1/12 h-1/12 inline-block mx-2 animate-wiggle text-indigo-500"/>
                     </h2>
-                    <p className="leading-relaxed mb-5 font-navbar">
+                    <p className="leading-relaxed mb-5 font-content">
                         How can I help?
                     </p>
                     <div className="relative mb-4">
-                        <label htmlFor="name" className="leading-7 text-sm text-gray-400 font-navbar">
+                        <label htmlFor="name" className="leading-7 text-sm text-gray-400 font-content">
                             Name
                         </label>
                         <input
@@ -86,7 +86,7 @@ export default function Contact() {
                         />
                     </div>
                     <div className="relative mb-4">
-                        <label htmlFor="email" className="leading-7 text-sm text-gray-400 font-navbar">
+                        <label htmlFor="email" className="leading-7 text-sm text-gray-400 font-content">
                             Email
                         </label>
                         <input
@@ -101,7 +101,7 @@ export default function Contact() {
                     <div className="relative mb-4">
                         <label
                             htmlFor="message"
-                            className="leading-7 text-sm text-gray-400 font-navbar">
+                            className="leading-7 text-sm text-gray-400 font-content">
                             Message
                         </label>
                         <textarea

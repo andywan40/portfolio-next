@@ -2,24 +2,26 @@ import mountFuji from "../public/mountFuji.jpg";
 import tokyoTower from "../public/tokyoTower.jpg";
 import harajuku from "../public/harajuku.jpg";
 import shibuya from "../public/shibuya.jpg";
+import foodpicker from "../public/foodpicker.jpg";
+import wannabuy from "../public/wannabuy.png";
 
 
 export const projects = [
     {
         title: "Food Picker",
         subtitle: "Can't Decide What To Eat?",
-        description:
-            "Designed and built for people who have trouble deciding what to eat. Showcases images and provides recipes of different dishes with the help of the Unsplash and Edamam API",
-        image: "./foodpicker.jpg",
+        description: "Designed and built for people who have trouble deciding what to eat. Showcases images and provides recipes of different dishes with the help of the Unsplash and Edamam API",
+        technology: ["React, Material UI, Node.js, Express.js"],
+        image: foodpicker, //"./foodpicker.jpg",
         link: "https://react-foodpicker-app.herokuapp.com",
         year: "2021"
     },
     {
         title: "WannaBuy",
         subtitle: "Can't Find What To Buy?",
-        description:
-            "Designed for online shoppers to better keep track of interested items",
-        image: "./wannabuy.png",
+        description: "Designed for online shoppers to better keep track of interested items",
+        technology: ["HTML", "CSS", "Javascript", "Node.js", "Express.js", "MongoDB"],
+        image: wannabuy, //"./wannabuy.png",
         link: "https://powerful-journey-37111.herokuapp.com",
         year: "2019"
     }

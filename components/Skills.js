@@ -17,7 +17,7 @@ export default function Skills() {
                         <div key={skill} className="col-span-1 lg:col-span-2 p-2 w-full">
                             <div className="bg-gray-100 border border-blue-400 rounded flex p-4 h-full items-center">
                                 <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4" />
-                                <span className="font-list font-black text-gray-900 xxs:text-xs md:text-sm">
+                                <span className="font-content font-black text-gray-900 xxs:text-xs md:text-sm">
                                     {skill}
                                 </span>
                             </div>
