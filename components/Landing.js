@@ -13,7 +13,7 @@ export default function Landing() {
                     <a className="my-1" href="https://www.instagram.com/and__wan" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
                 </div>
                 <div className="col-start-4 col-end-8 md:col-start-5 md:col-end-9 flex justify-center items-center">
-                    <h1 className="font-title font-extrabold leading-0.6 xxs:text-5xl xs:text-6xl lg:text-10xl text-14xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-red-600 ">
+                    <h1 className="font-title font-extrabold leading-0.6 xxs:text-5xl xs:text-6xl lg:text-10xl text-12xl mb-4 text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-red-600 ">
                         Andrew <br></br> Wan
                     </h1>
                 </div>

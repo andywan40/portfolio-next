@@ -17,7 +17,7 @@ export default function Page({children}) {
                 <Navbar/>
                 {children}
             </main>
-            <Footer/>
+            <Footer />
         </>
     )
 }

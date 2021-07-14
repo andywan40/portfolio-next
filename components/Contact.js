@@ -13,11 +13,9 @@ export default function Contact() {
         const url = "https://immense-fortress-49913.herokuapp.com/submitMessage"
         axios.post(url, info).then(res => {
             if (res.data.message) {
-                //toast.dismiss();
-                //alertSuccess();
+                //success()
             } else {
-                //toast.dismiss();
-                //alertFailure();
+                //failure();
             }
             setIsLoading(false);
         })

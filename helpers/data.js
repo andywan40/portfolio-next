@@ -12,7 +12,8 @@ export const projects = [
         subtitle: "Can't Decide What To Eat?",
         description: "Designed and built for people who have trouble deciding what to eat. Showcases images and provides recipes of different dishes with the help of the Unsplash and Edamam API",
         technology: ["React, Material UI, Node.js, Express.js"],
-        image: foodpicker, //"./foodpicker.jpg",
+        image: "./foodpicker.jpg",
+        img: foodpicker,
         link: "https://react-foodpicker-app.herokuapp.com",
         year: "2021"
     },
@@ -21,7 +22,8 @@ export const projects = [
         subtitle: "Can't Find What To Buy?",
         description: "Designed for online shoppers to better keep track of interested items",
         technology: ["HTML", "CSS", "Javascript", "Node.js", "Express.js", "MongoDB"],
-        image: wannabuy, //"./wannabuy.png",
+        image: "./wannabuy.png",
+        img: wannabuy,
         link: "https://powerful-journey-37111.herokuapp.com",
         year: "2019"
     }
@@ -134,3 +136,28 @@ export const images = [
 //   },
 //   {
 //]
+
+
+
+
+// <a
+                        //     href={project.link}
+                        //     key={project.title}
+                        //     className="sm:w-1/2 w-100 p-4">
+                        //     <div className="flex relative">
+                        //         <img
+                        //             className="absolute inset-0 w-full h-full object-cover object-center"
+                        //             src={project.image}
+                        //             alt={project.title}
+                        //         />
+                        //         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-white opacity-0 hover:opacity-100">
+                        //             <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                        //                 {project.subtitle}
+                        //             </h2>
+                        //             <h1 className="title-font text-lg font-medium text-black mb-3">
+                        //                 {project.title}
+                        //             </h1>
+                        //             <p className="leading-relaxed">{project.description}</p>
+                        //         </div>
+                        //     </div>
+                        // </a>
