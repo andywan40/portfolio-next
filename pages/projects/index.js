@@ -1,0 +1,23 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Page from '../../components/Page';
+import {projects} from "../../helpers/data.js";
+export default function Projects() {
+    return (
+        <Page>
+            <div className="container h-screen px-36 py-10 flex flex-col items-center justify-around">
+            {projects.map( (project, i) => (
+                <Link href="/projects/[title]" as={`/projects/${project.title}`} key={project.title}>
+                    <a className="h-full w-full hover:cursor-pointer">
+                        <div className="img-container h-full w-full flex justify-center items-center text-center my-6 group relative" >
+                            <img src={project.image} className="project-img rounded-lg w-full h-full"/>
+                            <h1 className="text-shadow-white text-5xl font-title text-black opacity-100">{project.title}</h1>
+                        </div>
+                    </a>
+                </Link>
+            ))}
+            </div>
+        </Page>
+    )
+}

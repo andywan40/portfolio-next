@@ -42,7 +42,7 @@ export default function About() {
       </div>
       <div className="grid grid-cols-2 xl:grid-cols-1 xxs:px-1 xs:px-4 sm:px-8 md:px-20 px-36 mb-10">
         {images.map(image => (
-          <div className="relative group flex text-center justify-center m-1">
+          <div className="relative group flex text-center justify-center m-1" key={image.title}>
             <Image src={image.src} className="group-hover:brightness-50 rounded-md m-5" />
             <div className="image-text text-2xl font-title group-hover:opacity-100 group-hover:font-medium">
               {image.title}

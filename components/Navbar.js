@@ -11,16 +11,18 @@ export default function Navbar() {
     const { pathname } = router;
     return (
         <header className="font-content bg-white sticky top-0 z-10">
-            <div className="mx-auto p-2 flex justify-between items-center">
+            <div className="mx-auto p-2 flex justify-between items-start">
                 <div className="title-font font-medium text-black mb-4 md:mb-0">
                     <Link href="/">
-                        <Image
-                            className="absolute inset-0 object-center cursor-pointer"
-                            src={logo}
-                            alt="logo"
-                        />
+                        <a>
+                            <Image
+                                className="absolute inset-0 object-center cursor-pointer"
+                                src={logo}
+                                alt="logo"
+                            />
+                        </a>
                     </Link>                </div>
-                <nav className="title-font flex justify-end items-center">
+                <nav className="title-font flex justify-end items-center pt-5">
                     <Link href="/about">
                         <a className={pathname === "/about" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
                             About
@@ -31,11 +33,9 @@ export default function Navbar() {
                             Projects
                         </a>
                     </Link>
-                    <Link href="/experiences">
-                        <a className={pathname === "/experiences" ? "md:hidden mr-5 text-black uppercase active" : "md:hidden mr-5 text-black uppercase strike"}>
-                            Experiences
-                        </a>
-                    </Link>
+                    <a href="/andrew_wan_resume.pdf" download className="md:hidden mr-5 text-black uppercase strike">
+                        Resume
+                    </a>
                     <Link href="/#contact">
                         <a className="md:hidden mr-5 text-black uppercase strike">
                             Contact

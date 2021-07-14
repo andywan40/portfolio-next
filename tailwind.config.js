@@ -16,6 +16,7 @@ module.exports = {
       brightness: {
         35: '.35',
         40: '.40',
+        60: '.60'
       },
       lineHeight: {
         "0.5": "0.5",
