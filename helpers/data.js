@@ -3,82 +3,86 @@ import tokyoTower from "../public/tokyoTower.jpg";
 import harajuku from "../public/harajuku.jpg";
 import shibuya from "../public/shibuya.jpg";
 import foodpicker from "../public/foodpicker.jpg";
+import foodpicker1 from "../public/foodpicker1.png";
 import wannabuy from "../public/wannabuy.png";
-
+import wannabuy1 from "../public/wannabuy1.png";
 
 export const projects = [
-    {
-        title: "FoodPicker",
-        subtitle: "Can't Decide What To Eat?",
-        description: "Designed and built for people who have trouble deciding what to eat. Showcases images and provides recipes of different dishes with the help of the Unsplash and Edamam API",
-        technology: ["React, Material UI, Node.js, Express.js"],
-        image: "./foodpicker.jpg",
-        img: foodpicker,
-        link: "https://react-foodpicker-app.herokuapp.com",
-        year: "2021",
-        id:0
-    },
-    {
-        title: "WannaBuy",
-        subtitle: "Can't Find What To Buy?",
-        description: "Designed for online shoppers to better keep track of interested items",
-        technology: ["HTML", "CSS", "Javascript", "Node.js", "Express.js", "MongoDB"],
-        image: "./wannabuy.png",
-        img: wannabuy,
-        link: "https://powerful-journey-37111.herokuapp.com",
-        year: "2020",
-        id:1
-    }
+  {
+    title: "FoodPicker",
+    subtitle: "Can't Decide What To Eat?",
+    description:
+      "Designed and built for people who have trouble deciding what to eat. Randomly generates a cuisine and a dish. Showcases images and provides recipes of different dishes with the help of the Unsplash and Edamam API.",
+    technology: ["React", "Material UI", "Node.js", "Express.js"],
+    image: "./foodpicker.jpg",
+    img: foodpicker,
+    img1: foodpicker1,
+    link: "https://react-foodpicker-app.herokuapp.com",
+    year: "2021",
+    id: 0,
+  },
+  {
+    title: "WannaBuy",
+    subtitle: "Can't Find What To Buy?",
+    description:
+      "Designed for online shoppers to better keep track of interested items. Tired of having a million tabs open and struggling to find what to buy? Wannabuy is the website for you.",
+    technology: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    image: "./wannabuy.png",
+    img: wannabuy,
+    img1: wannabuy1,
+    link: "https://powerful-journey-37111.herokuapp.com",
+    year: "2020",
+    id: 1,
+  },
 ];
 
 export const skills = [
-    "JavaScript",
-    "React/Redux",
-    "Vue/Vuex",
-    "Node.js",
-    "Express.js",
-    "jQuery",
-    "Python",
-    "SQL",
-    "MongoDB",
-    "Material UI"
+  "JavaScript",
+  "React/Redux",
+  "Vue/Vuex",
+  "Node.js",
+  "Express.js",
+  "jQuery",
+  "Python",
+  "SQL",
+  "MongoDB",
+  "Material UI",
 ];
 
-
 export const images = [
-    {
-        src: mountFuji,
-        title: "Mount Fuji",
-        author: "aditya anjagi"
-    },
-    {
-        src: tokyoTower,
-        title: "Tokyo Tower",
-        author: "Jezael Melgoza"
-    },
-    {
-        src: harajuku,
-        title: "Harajuku",
-        author: "Elton Sa"
-    },
-    {
-        src: shibuya,
-        title: "Shibuya",
-        author: "Jezael Melgoza"
-    }
-]
-
-
-
+  {
+    src: mountFuji,
+    title: "Mount Fuji",
+    author: "aditya anjagi",
+  },
+  {
+    src: tokyoTower,
+    title: "Tokyo Tower",
+    author: "Jezael Melgoza",
+  },
+  {
+    src: harajuku,
+    title: "Harajuku",
+    author: "Elton Sa",
+  },
+  {
+    src: shibuya,
+    title: "Shibuya",
+    author: "Jezael Melgoza",
+  },
+];
 
 //Photo by <a href="https://unsplash.com/@agilelo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">aditya anjagi</a> on <a href="https://unsplash.com/s/photos/mount-fuji?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 //Photo by <a href="https://unsplash.com/@jezael?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jezael Melgoza</a> on <a href="https://unsplash.com/s/photos/tokyo-tower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 //Photo by <a href="https://unsplash.com/@bigeruta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elton Sa</a> on <a href="https://unsplash.com/s/photos/harajuku?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 //Photo by <a href="https://unsplash.com/@jezael?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jezael Melgoza</a> on <a href="https://unsplash.com/s/photos/shibuya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-  
-
-
 
 // export const resumeSections = [
 //   {
@@ -139,27 +143,24 @@ export const images = [
 //   {
 //]
 
-
-
-
 // <a
-                        //     href={project.link}
-                        //     key={project.title}
-                        //     className="sm:w-1/2 w-100 p-4">
-                        //     <div className="flex relative">
-                        //         <img
-                        //             className="absolute inset-0 w-full h-full object-cover object-center"
-                        //             src={project.image}
-                        //             alt={project.title}
-                        //         />
-                        //         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-white opacity-0 hover:opacity-100">
-                        //             <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                        //                 {project.subtitle}
-                        //             </h2>
-                        //             <h1 className="title-font text-lg font-medium text-black mb-3">
-                        //                 {project.title}
-                        //             </h1>
-                        //             <p className="leading-relaxed">{project.description}</p>
-                        //         </div>
-                        //     </div>
-                        // </a>
+//     href={project.link}
+//     key={project.title}
+//     className="sm:w-1/2 w-100 p-4">
+//     <div className="flex relative">
+//         <img
+//             className="absolute inset-0 w-full h-full object-cover object-center"
+//             src={project.image}
+//             alt={project.title}
+//         />
+//         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-white opacity-0 hover:opacity-100">
+//             <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+//                 {project.subtitle}
+//             </h2>
+//             <h1 className="title-font text-lg font-medium text-black mb-3">
+//                 {project.title}
+//             </h1>
+//             <p className="leading-relaxed">{project.description}</p>
+//         </div>
+//     </div>
+// </a>
