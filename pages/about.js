@@ -6,7 +6,6 @@ import { images } from "../helpers/data";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(true);
-  const [isScrolling, setIsScrolling] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
     return () => window.removeEventListener("scroll", listenToScroll);

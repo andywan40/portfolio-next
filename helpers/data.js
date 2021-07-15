@@ -8,14 +8,15 @@ import wannabuy from "../public/wannabuy.png";
 
 export const projects = [
     {
-        title: "Food Picker",
+        title: "FoodPicker",
         subtitle: "Can't Decide What To Eat?",
         description: "Designed and built for people who have trouble deciding what to eat. Showcases images and provides recipes of different dishes with the help of the Unsplash and Edamam API",
         technology: ["React, Material UI, Node.js, Express.js"],
         image: "./foodpicker.jpg",
         img: foodpicker,
         link: "https://react-foodpicker-app.herokuapp.com",
-        year: "2021"
+        year: "2021",
+        id:0
     },
     {
         title: "WannaBuy",
@@ -25,7 +26,8 @@ export const projects = [
         image: "./wannabuy.png",
         img: wannabuy,
         link: "https://powerful-journey-37111.herokuapp.com",
-        year: "2019"
+        year: "2020",
+        id:1
     }
 ];
 
