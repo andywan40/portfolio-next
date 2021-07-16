@@ -50,9 +50,12 @@ export default function Project(props) {
             <div className="my-5">
               <h2 className="font-bold uppercase text-black mb-1">Stack</h2>
               <ul className="ml-3">
-                {projectObj.technology.map(tech => (
-                  <li className="list-disc">{tech}</li>
-                ))}
+                {projectObj.technology}
+                {/* {projectObj.technology.map(tech => (
+                  <li className="list-disc" key={tech}>
+                    {tech}
+                  </li>
+                ))} */}
               </ul>
             </div>
             <div className="my-5 w-1/2">
