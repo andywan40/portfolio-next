@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
+import { ViewGridIcon } from "@heroicons/react/outline";
 import Page from "../../components/Page";
 import { projects } from "../../helpers/data";
 
@@ -8,7 +10,7 @@ export default function Project({ project }) {
     <Page>
       <div className="container mt-5 xxs:px-1 xs:px-4 sm:px-8 md:px-15 lg:px-20 px-30 py-10 flex flex-col">
         <div className="grid grid-cols-12 mb-20">
-          <div className="flex flex-col col-start-1 col-span-4 lg:col-start-2 lg:col-span-10 lg:mb-10 justify-center items-center p-5 lg:pt-2">
+          <div className="flex flex-col col-start-1 col-span-4 lg:col-start-2 lg:col-span-10 lg:mb-10 justify-center lg:items-center items-end lg:p-5 p-16 lg:pt-2">
             <h1 className="text-black text-3xl font-title">{project?.title}</h1>
             <h6 className="text-gray-700 text-sm font-title">
               {project?.subtitle}
@@ -68,7 +70,7 @@ export default function Project({ project }) {
               </a>
             </div>
           </div>
-          <div className="hidden lg:block w-full h-full lg:col-start-2 lg:col-span-11 flex flex-col justify-center items-center p-5 lg:mt-10">
+          <div className="hidden lg:block w-full h-full lg:col-start-2 lg:col-span-11 flex flex-col justify-center items-center md:p-0 p-5 lg:mt-10">
             <div className="mb-16">
               <Image
                 src={project?.img1}
@@ -82,6 +84,13 @@ export default function Project({ project }) {
               className="w-full h-full rounded-lg"
             />
           </div>
+        </div>
+        <div className="flex justify-center my-10">
+          <Link href="/projects">
+            <a>
+              <ViewGridIcon className="w-8 h-8" />
+            </a>
+          </Link>
         </div>
       </div>
     </Page>
