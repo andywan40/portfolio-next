@@ -37,12 +37,12 @@ export default function Project({ project }) {
               className="w-full h-full rounded-lg"
             />
           </div>
-          <div className="flex flex-col lg:col-start-2 lg:col-span-11 col-start-8 col-span-5 justify-start items-start text-left pt-5 px-10 md:px-5 lg:px-8 ">
-            <div className="my-5 lg:p-2">
+          <div className="flex flex-col lg:col-start-2 lg:col-span-11 col-start-8 col-span-5 justify-start items-start text-left pt-5 px-20 md:px-5 lg:px-8 ">
+            <div className="my-10 lg:my-5 lg:p-2">
               <h2 className="font-bold uppercase text-black mb-1">Year</h2>
               <h2>{project?.year}</h2>
             </div>
-            <div className="my-5 lg:p-2">
+            <div className="my-10 lg:my-5 lg:p-2">
               <h2 className="font-bold uppercase text-black mb-1">Stack</h2>
               <ul className="ml-3">
                 {project?.technology.map(tech => (
@@ -52,11 +52,11 @@ export default function Project({ project }) {
                 ))}
               </ul>
             </div>
-            <div className="my-5 lg:p-2 w-1/2 lg:w-full">
+            <div className="my-10 lg:my-5 lg:p-2 w-1/2 lg:w-full">
               <h2 className="font-bold uppercase text-black mb-1">Mission</h2>
               <h2>{project?.description}</h2>
             </div>
-            <div className="lg:flex lg:flex-col lg:justify-center lg:h-full">
+            <div className="my-10 lg:my-5 lg:flex lg:flex-col lg:justify-center lg:h-full">
               <a
                 href={project?.link}
                 target="_blank"

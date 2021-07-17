@@ -1,9 +1,14 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
+import Menu from "./Menu";
 import Footer from "./Footer";
+// import { useAppContext } from "../context/AppContext";
+import { useAppContext } from "../pages/_app";
 
 export default function Page({ children }) {
+  const state = useAppContext();
+  const { showMenu } = state;
   return (
     <>
       <Head>
@@ -18,9 +23,9 @@ export default function Page({ children }) {
       </Head>
       <main className="text-gray-400 bg-white body-font">
         <Navbar />
-        {children}
+        {showMenu ? <Menu /> : children}
       </main>
-      <Footer />
+      {!showMenu && <Footer />}
     </>
   );
 }
