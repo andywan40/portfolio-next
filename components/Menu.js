@@ -6,7 +6,7 @@ export default function Menu() {
   const router = useRouter();
   const { pathname } = router;
   return (
-    <nav className="h-screen bg-black flex flex-col justify-center items-start title-font font-medium text-4xl tracking-widest p-10">
+    <nav className="h-screen bg-black flex flex-col justify-center items-start title-font font-medium sm:text-2xl text-3xl tracking-widest p-10">
       <Link href="/about">
         <a
           className={
