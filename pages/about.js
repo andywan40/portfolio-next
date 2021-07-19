@@ -24,7 +24,7 @@ export default function About() {
 
   return (
     <Page>
-      <div className="container xs:px-6 sm:px-8 lg:px-20 px-36 sm:pt-0 sm:pb-20 pt-6 pb-10 text-gray-600 h-screen font-navbar xs:flex xs:flex-col xs:justify-start xs:items-center xs:pt-10 text-left">
+      <div className="container xs:px-6 sm:px-8 lg:px-20 px-36 sm:pt-0 sm:pb-20 pt-6 pb-10 text-gray-600 h-full min-h-screen font-navbar xs:flex xs:flex-col xs:justify-start xs:items-center xs:pt-10 text-left">
         <div>
           <div className="flex items-center">
             <h1 className="xs:text-1xl sm:text-2xl md:text-3xl text-4xl text-gray-800 font-title inline-block">
@@ -73,7 +73,7 @@ export default function About() {
           <ArrowDownIcon className="h-7 w-7 ml-2 mt-4 text-pink-400 inline-block md:hidden animate-bounce" />
         </div>
       </div>
-      <div className="grid grid-cols-2 xl:grid-cols-1 xxs:px-1 xs:px-4 sm:px-8 md:px-20 px-36 mb-10">
+      <div className="grid grid-cols-2 xl:grid-cols-1 xxs:px-1 xs:px-4 sm:px-8 md:px-20 px-36 mb-16">
         {images.map(image => (
           <div
             className="relative group flex text-center justify-center m-1"

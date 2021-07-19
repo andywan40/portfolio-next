@@ -39,7 +39,7 @@ export default function Project({ project }) {
               className="w-full h-full rounded-lg"
             />
           </div>
-          <div className="flex flex-col lg:col-start-2 lg:col-span-10 col-start-8 col-span-5 justify-start items-start text-left pt-5 px-20 md:px-5 lg:px-8 ">
+          <div className="flex flex-col lg:col-start-2 lg:col-span-10 col-start-8 col-span-5 justify-start items-start text-left pt-5 sm:pt-10 px-20 md:px-5 lg:px-8 ">
             <div className="my-10 lg:my-5 lg:p-2">
               <h2 className="font-bold uppercase text-black mb-1">Year</h2>
               <h2>{project?.year}</h2>
