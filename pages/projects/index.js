@@ -17,6 +17,7 @@ export default function Projects() {
               <div className="img-container h-full w-full flex justify-center items-center text-center my-6 group relative">
                 <img
                   src={project.image}
+                  alt={project.title}
                   className="project-img rounded-lg w-full h-full"
                 />
                 <h1 className="text-shadow-white xs:text-1xl sm:text-2xl md:text-3xl lg:text-4xl text-5xl font-title text-black opacity-100">

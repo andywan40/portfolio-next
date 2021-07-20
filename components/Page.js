@@ -12,14 +12,20 @@ export default function Page({ children }) {
   return (
     <>
       <Head>
-        <title>Andrew Wan | Full Stack Developer</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Andrew Wan, Full Stack Developer Portfolio Website"
+        ></meta>
         <link rel="icon" href="/logo_colored.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Cantarell&family=Cinzel&family=Rakkas&display=swap"
           rel="stylesheet"
         />
+        <title>Andrew Wan | Full Stack Developer</title>
       </Head>
       <main className="text-gray-400 bg-white body-font">
         <Navbar />
