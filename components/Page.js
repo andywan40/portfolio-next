@@ -20,15 +20,16 @@ export default function Page({ children }) {
         ></meta>
         <link rel="icon" href="/logo_colored.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Cantarell&family=Cinzel&family=Rakkas&display=swap"
           rel="stylesheet"
         />
-        <script
-          src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
-          crossOrigin
-        ></script>
+        <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
         <title>Andrew Wan | Full Stack Developer</title>
       </Head>
       <main className="text-gray-400 bg-white body-font" id="particles-js">

@@ -10,9 +10,9 @@ export default function Landing() {
     <section id="about" className="h-screen">
       <Particles className="particles-container" params={particlesParams} />
       <div className="grid grid-cols-12 h-screen">
-        <div className="col-start-1 col-span-1 md:col-start-1 md:col-span-2 flex flex-col justify-end items-end sm:justify-start sm:pt-20 xs:pt-32 md:pb-36 pb-48">
+        <div className="col-start-1 col-span-1 md:col-start-1 md:col-span-2 flex flex-col justify-end items-end sm:justify-start z-10 sm:pt-20 xs:pt-32 md:pb-36 pb-48">
           <a
-            className="my-1"
+            className="my-1 hover:text-pink-600 transition duration-3000 ease-in-out"
             href="https://www.linkedin.com/in/and-wan"
             target="_blank"
             rel="noopener noreferrer"
@@ -20,7 +20,7 @@ export default function Landing() {
             <LinkedInIcon />
           </a>
           <a
-            className="my-1"
+            className="my-1 hover:text-pink-600 transition duration-3000 ease-in-out"
             href="https://github.com/andywan40"
             target="_blank"
             rel="noopener noreferrer"
@@ -28,7 +28,7 @@ export default function Landing() {
             <GitHubIcon />
           </a>
           <a
-            className="my-1"
+            className="my-1 hover:text-pink-600 transition duration-3000 ease-in-out"
             href="https://www.instagram.com/and__wan"
             target="_blank"
             rel="noopener noreferrer"
