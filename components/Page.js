@@ -25,9 +25,13 @@ export default function Page({ children }) {
           href="https://fonts.googleapis.com/css2?family=Cantarell&family=Cinzel&family=Rakkas&display=swap"
           rel="stylesheet"
         />
+        <script
+          src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
+          crossOrigin
+        ></script>
         <title>Andrew Wan | Full Stack Developer</title>
       </Head>
-      <main className="text-gray-400 bg-white body-font">
+      <main className="text-gray-400 bg-white body-font" id="particles-js">
         <Navbar />
         {showMenu ? <Menu /> : children}
       </main>

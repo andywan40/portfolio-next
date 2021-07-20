@@ -1,11 +1,14 @@
 import React from "react";
+import Particles from "react-particles-js";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import { particlesParams } from "../helpers/data.js";
 
 export default function Landing() {
   return (
     <section id="about" className="h-screen">
+      <Particles className="particles-container" params={particlesParams} />
       <div className="grid grid-cols-12 h-screen">
         <div className="col-start-1 col-span-1 md:col-start-1 md:col-span-2 flex flex-col justify-end items-end sm:justify-start sm:pt-20 xs:pt-32 md:pb-36 pb-48">
           <a
