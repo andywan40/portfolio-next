@@ -85,21 +85,21 @@ export const images = [
 
 export const particlesParams = {
   particles: {
-    number: { value: 22, density: { enable: false, value_area: 300 } },
+    number: { value: 25, density: { enable: false, value_area: 300 } },
     color: { value: "#c84040" },
     shape: {
-      type: "circle",
+      type: "image",
       stroke: { width: 0, color: "#000000" },
       polygon: { nb_sides: 5 },
-      image: { src: "img/github.svg", width: 100, height: 100 },
+      image: { src: "flower.svg", width: 100, height: 100 },
     },
     opacity: {
-      value: 0.6,
+      value: 0.7,
       random: true,
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
     size: {
-      value: 5,
+      value: 6,
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
     },
@@ -118,14 +118,14 @@ export const particlesParams = {
       straight: false,
       out_mode: "out",
       bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 1200 },
+      attract: { enable: true, rotateX: 600, rotateY: 1200 },
     },
   },
   interactivity: {
     detect_on: "canvas",
     events: {
       onhover: { enable: false, mode: "repulse" },
-      onclick: { enable: false, mode: "push" },
+      onclick: { enable: true, mode: "push" },
       resize: true,
     },
     modes: {
