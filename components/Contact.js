@@ -9,6 +9,10 @@ export default function Contact() {
     message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState({
+    submitted: false,
+    success: false,
+  });
   const handleSubmit = e => {
     e.preventDefault();
     const info = formData;
@@ -17,9 +21,15 @@ export default function Contact() {
     const url = "https://immense-fortress-49913.herokuapp.com/messages";
     axios.post(url, info).then(res => {
       if (res.data.message) {
-        //success()
+        setSubmitStatus({
+          submitted: true,
+          success: true,
+        });
       } else {
-        //failure();
+        setSubmitStatus({
+          submitted: true,
+          success: false,
+        });
       }
       setIsLoading(false);
     });
@@ -29,6 +39,39 @@ export default function Contact() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
+  const updateButtonStyle = () => {
+    let buttonStyle;
+    if (isLoading) {
+      buttonStyle =
+        "cursor-not-allowed opacity-50 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest";
+    } else if (!submitStatus.submitted) {
+      buttonStyle =
+        "text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest";
+    } else if (!submitStatus) {
+      buttonStyle =
+        "text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest";
+    } else {
+      buttonStyle =
+        "text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest";
+    }
+    return buttonStyle;
+  };
+
+  const updateButtonText = () => {
+    let buttonText;
+    if (isLoading) {
+      buttonText = "Submitting...";
+    } else if (!submitStatus.submitted) {
+      buttonText = "Submit";
+    } else if (!submitStatus) {
+      buttonText = "Failed...Please Try Again Later";
+    } else {
+      buttonText = "Success";
+    }
+    return buttonText;
+  };
+
   return (
     <section id="contact" className="relative">
       <div className="container grid grid-cols-12 md:px-10 px-36 py-10 mx-auto my-10">
@@ -123,14 +166,10 @@ export default function Contact() {
           <button
             type="submit"
             className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest"
-            className={
-              isLoading
-                ? "cursor-not-allowed opacity-50 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest"
-                : "text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-title tracking-widest"
-            }
+            className={updateButtonStyle()}
             disabled={isLoading ? true : false}
           >
-            {isLoading ? "...Submitting" : "Submit"}
+            {updateButtonText()}
           </button>
         </form>
       </div>
