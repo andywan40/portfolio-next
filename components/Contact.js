@@ -14,7 +14,7 @@ export default function Contact() {
     const info = formData;
     setIsLoading(true);
     setFormData({ name: "", email: "", message: "" });
-    const url = "https://immense-fortress-49913.herokuapp.com/submitMessage";
+    const url = "https://immense-fortress-49913.herokuapp.com/messages";
     axios.post(url, info).then(res => {
       if (res.data.message) {
         //success()
