@@ -101,9 +101,9 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <p className="text-indigo-400 leading-relaxed">
                 andywan40@gmail.com
-              </a>
+              </p>
             </div>
           </div>
         </div>
