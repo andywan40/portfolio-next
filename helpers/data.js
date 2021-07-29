@@ -85,7 +85,7 @@ export const images = [
 
 export const particlesParams = {
   particles: {
-    number: { value: 25, density: { enable: false, value_area: 300 } },
+    number: { value: 30, density: { enable: false, value_area: 300 } },
     color: { value: "#c84040" },
     shape: {
       type: "image",
@@ -99,7 +99,7 @@ export const particlesParams = {
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
     size: {
-      value: 6,
+      value: 7,
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
     },

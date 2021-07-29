@@ -58,12 +58,12 @@ export default function Project({ project }) {
               <h2 className="font-bold uppercase text-black mb-1">Mission</h2>
               <h2>{project?.description}</h2>
             </div>
-            <div className="my-10 lg:my-5 lg:flex lg:flex-col lg:justify-center lg:h-full">
+            <div className="my-10 lg:my-5 lg:flex lg:flex-col lg:justify-center lg:h-full mt-10">
               <a
                 href={project?.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-content uppercase text-white bg-black py-3 px-5 mt-5 rounded-sm lg:py-1 lg:px-3 flex items-center sm:text-sm"
+                className="font-content uppercase rounded-sm flex items-center sm:text-sm py-3 px-5 lg:py-1 lg:px-3 visit-link"
               >
                 Visit Site
                 <ArrowNarrowRightIcon className="w-5 h-5 ml-5 inline-block"></ArrowNarrowRightIcon>

@@ -31,7 +31,7 @@ export default function Navbar() {
             </a>
           </Link>{" "}
         </div>
-        <nav className="title-font font-medium text-sm tracking-widest flex justify-end items-center pt-5">
+        <nav className="title-font font-medium text-sm tracking-wide flex justify-end items-center pt-5">
           {!showMenu && (
             <>
               <Link href="/about">
