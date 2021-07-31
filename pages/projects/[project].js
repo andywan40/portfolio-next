@@ -39,7 +39,7 @@ export default function Project({ project }) {
               className="w-full h-full rounded-lg"
             />
           </div>
-          <div className="flex flex-col lg:col-start-2 lg:col-span-10 col-start-8 col-span-5 justify-start items-start text-left pt-5 sm:pt-10 px-20 md:px-5 lg:px-8 ">
+          <div className="flex flex-col lg:col-start-2 lg:col-span-10 col-start-8 col-span-5 justify-centerjustify-start items-start text-left pt-5 sm:pt-10 px-20 md:px-5 lg:px-8 ">
             <div className="my-10 lg:my-5 lg:p-2">
               <h2 className="font-bold uppercase text-black mb-1">Year</h2>
               <h2>{project?.year}</h2>
@@ -63,7 +63,7 @@ export default function Project({ project }) {
                 href={project?.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-content uppercase rounded-sm flex items-center sm:text-sm py-3 px-5 lg:py-1 lg:px-3 visit-link"
+                className="font-content uppercase rounded-sm flex items-center sm:text-sm py-3 px-3 lg:py-1 lg:px-2 visit-link"
               >
                 Visit Site
                 <ArrowNarrowRightIcon className="w-5 h-5 ml-5 inline-block"></ArrowNarrowRightIcon>
