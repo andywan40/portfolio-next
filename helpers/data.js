@@ -8,8 +8,25 @@ import foodpicker2 from "../public/foodpicker2.png";
 import wannabuy from "../public/wannabuy.png";
 import wannabuy1 from "../public/wannabuy1.png";
 import wannabuy2 from "../public/wannabuy2.png";
+import passwordvault from "../public/passwordvault.png";
+import passwordvault1 from "../public/passwordvault1.png";
+import passwordvault2 from "../public/passwordvault2.png";
 
 export const projects = [
+  {
+    title: "Password Vault",
+    subtitle: "Can't Remember Your Passwords?",
+    description:
+      "Designed and implemented for people who have trouble remembering their passwords. Password Vault offers the safest way for individuals to store personal and sensitive data.",
+    technology: ["Next.js", "Tailwind CSS", "Material UI", "Django", "SQLite"],
+    image: "./passwordvault.png",
+    img: passwordvault,
+    img1: passwordvault1,
+    img2: passwordvault2,
+    link: "#",
+    year: "2021",
+    id: 0,
+  },
   {
     title: "FoodPicker",
     subtitle: "Can't Decide What To Eat?",
@@ -22,7 +39,7 @@ export const projects = [
     img2: foodpicker2,
     link: "https://react-foodpicker-app.herokuapp.com",
     year: "2021",
-    id: 0,
+    id: 1,
   },
   {
     title: "WannaBuy",
@@ -43,7 +60,7 @@ export const projects = [
     img2: wannabuy2,
     link: "https://powerful-journey-37111.herokuapp.com",
     year: "2020",
-    id: 1,
+    id: 2,
   },
 ];
 

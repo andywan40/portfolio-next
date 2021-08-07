@@ -100,7 +100,9 @@ export default function Project({ project }) {
 export async function getStaticProps(context) {
   let projectObj = {};
   for (let project of projects) {
-    if (project.title.toLowerCase() === context.params.project) {
+    if (
+      project.title.split(" ").join("").toLowerCase() === context.params.project
+    ) {
       projectObj = project;
       break;
     }
@@ -114,7 +116,11 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   return {
-    paths: ["/projects/foodpicker", "/projects/wannabuy"],
+    paths: [
+      "/projects/passwordvault",
+      "/projects/foodpicker",
+      "/projects/wannabuy",
+    ],
     fallback: true,
   };
 }

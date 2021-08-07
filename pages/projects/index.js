@@ -10,7 +10,7 @@ export default function Projects() {
         {projects.map(project => (
           <Link
             href="/projects/[title]"
-            as={`/projects/${project.title.toLowerCase()}`}
+            as={`/projects/${project.title.split(" ").join("").toLowerCase()}`}
             key={project.title}
           >
             <a className="h-full w-full hover:cursor-pointer">
