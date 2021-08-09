@@ -11,7 +11,9 @@ export default function Project({ project }) {
       <div className="container mt-5 xxs:px-1 xs:px-4 sm:px-8 md:px-15 lg:px-20 px-30 py-10 flex flex-col">
         <div className="grid grid-cols-12 mb-20">
           <div className="flex flex-col col-start-1 col-span-4 lg:col-start-2 lg:col-span-10 lg:mb-10 justify-center lg:items-center items-end lg:p-5 p-16 lg:pt-2">
-            <h1 className="text-black text-3xl font-title">{project?.title}</h1>
+            <h1 className="text-black text-3xl font-title xs:text-center xs:text-2xl">
+              {project?.title}
+            </h1>
             <h6 className="text-gray-700 text-sm font-title">
               {project?.subtitle}
             </h6>

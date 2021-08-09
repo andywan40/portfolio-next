@@ -20,7 +20,7 @@ export default function Projects() {
                   alt={project.title}
                   className="project-img rounded-lg w-full h-full"
                 />
-                <h1 className="text-shadow-white xs:text-1xl sm:text-2xl md:text-3xl lg:text-4xl text-5xl font-title text-black opacity-100">
+                <h1 className="text-shadow-white xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-5xl font-title text-black opacity-100">
                   {project.title}
                 </h1>
               </div>

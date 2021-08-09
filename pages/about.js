@@ -25,7 +25,7 @@ export default function About() {
   return (
     <Page>
       <div className="container xs:px-6 sm:px-8 lg:px-20 px-36 sm:pt-0 sm:pb-20 pt-6 pb-10 text-gray-600 h-full min-h-screen font-navbar xs:flex xs:flex-col xs:justify-start xs:items-center xs:pt-10 text-left">
-        <div>
+        <div className="w-4/6 lg:w-full">
           <div className="flex items-center">
             <h1 className="xs:text-1xl sm:text-2xl md:text-3xl text-4xl text-gray-800 font-title inline-block">
               About Me
@@ -41,6 +41,18 @@ export default function About() {
             of many people. <br></br> Right now, I am working on a few side
             projects including
             <a
+              href="https://passwordvaultnext.vercel.app/"
+              className="text-pink-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Password Vault{" "}
+            </a>
+            <span>
+              (a web app that allows you to securely manage your passwords) and
+            </span>
+            <a
               href="https://react-foodpicker-app.herokuapp.com/"
               className="text-pink-400"
               target="_blank"
@@ -49,7 +61,9 @@ export default function About() {
               {" "}
               FoodPicker{" "}
             </a>
-            (a web app that generates random meals and provides recipes).
+            <span>
+              (a web app that generates random meals and provides recipes).
+            </span>
           </p>
           <p className="mb-10 sm:mb-6 text-md xs:w-10/12">
             Outside of work, I enjoy playing{" "}
