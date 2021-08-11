@@ -32,8 +32,8 @@ export default function About() {
             </h1>
           </div>
           <h5 className="my-8 sm:my-6 text-1xl xs:w-10/12">
-            I currently am working as a Software Engineer at{" "}
-            <span className="text-pink-400">Asgard System, Inc. </span>
+            I am a <span className="text-pink-400">full stack developer</span>{" "}
+            with focus on frontend.
           </h5>
           <p className="mb-10 sm:mb-6 text-md xs:w-10/12">
             {" "}
