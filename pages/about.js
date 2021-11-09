@@ -32,8 +32,7 @@ export default function About() {
             </h1>
           </div>
           <h5 className="my-8 sm:my-6 text-1xl xs:w-10/12">
-            I am a <span className="text-pink-400">full stack developer</span>{" "}
-            with focus on frontend.
+            I am currently working as a <span className="text-pink-400">software engineer</span> at <span className="text-pink-400">J.P. Morgan Asset Management</span>.
           </h5>
           <p className="mb-10 sm:mb-6 text-md xs:w-10/12">
             {" "}
