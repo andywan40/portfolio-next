@@ -66,12 +66,14 @@ export const projects = [
 
 export const skills = [
   "JavaScript",
+  "Java",
+  "Python",
   "React/Redux",
+  "SpringBoot",
   "Vue/Vuex",
   "Node.js",
   "Express.js",
   "jQuery",
-  "Python",
   "SQL",
   "MongoDB",
   "Material UI",

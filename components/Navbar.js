@@ -57,7 +57,7 @@ export default function Navbar() {
                 </a>
               </Link>
               <a
-                href="/andrew_wan_resume.pdf"
+                href="/andrew_wan_cv.pdf"
                 download
                 className="md:hidden mr-5 text-black uppercase strike"
               >
